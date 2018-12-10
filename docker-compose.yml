@@ -1,0 +1,9 @@
+version: "3"
+services:
+  swift:
+    build:
+      context: .
+    image: swift
+    command: ./build.sh
+    volumes:
+      - .:/lambda
